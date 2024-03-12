@@ -12,7 +12,7 @@ function points(games) {
       totalPoints += tie;
     }
   }
-  return sum;
+  return totalPoints;
 }
 
 console.log(
