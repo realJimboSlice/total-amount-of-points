@@ -2,14 +2,14 @@ function points(games) {
   const win = 3;
   const lose = 0;
   const tie = 1;
-  let sum = 0;
+  let totalPoints = 0;
   for (let i = 0; i < games.length; i++) {
     if (games[i].charAt(0) > games[i].charAt(2)) {
-      sum += win;
+      totalPoints += win;
     } else if (games[i].charAt(0) < games[i].charAt(2)) {
-      sum += lose;
+      totalPoints += lose;
     } else if (games[i].charAt(0) == games[i].charAt(2)) {
-      sum += tie;
+      totalPoints += tie;
     }
   }
   return sum;
